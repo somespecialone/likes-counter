@@ -1,0 +1,7 @@
+test
+vitest.config.ts
+README.md
+.*
+!.*.ts
+!.npmrc
+coverage
