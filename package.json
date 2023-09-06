@@ -14,7 +14,7 @@
     "coverage": "vitest --coverage"
   },
   "dependencies": {
-    "deta": "^1.2.0",
+    "deta": "^2.0.0",
     "nanoid": "^4.0.2",
     "nitropack": "^2.6.0"
   },

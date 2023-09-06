@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   deta:
-    specifier: ^1.2.0
-    version: 1.2.0
+    specifier: ^2.0.0
+    version: 2.0.0
   nanoid:
     specifier: ^4.0.2
     version: 4.0.2
@@ -1959,8 +1959,8 @@ packages:
     engines: {node: '>= 0.8', npm: 1.2.8000 || >= 1.4.16}
     dev: false
 
-  /deta@1.2.0:
-    resolution: {integrity: sha512-GWjXnVQmyMY1rALnIhdZ3+LioC83R7n9nINoCIbC1KfxusrBeHfqG5LXYbpvq+1sbPNSGAV45Kuf8/TJugUYsw==}
+  /deta@2.0.0:
+    resolution: {integrity: sha512-ve+WITlmfT5nJhhdPkUWRHL3x1x9J5mZouIS0zfYR9N/WXYVWdX8muBpFVS5L0Jwxmsvgnbe4I7e1aOrrjIctg==}
     dependencies:
       node-fetch: 2.7.0
     transitivePeerDependencies:
