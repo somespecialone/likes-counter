@@ -17,6 +17,8 @@
 
 > ️ ️⚠️ Try demo **[here](https://somespecialone.github.io/likes-counter)**. Also look at [views-counter](https://github.com/somespecialone/views-counter)
 
+⚡ Api address: https://lc.somespecial.one
+
 ## How to use
 
 App exposes json API routes.
