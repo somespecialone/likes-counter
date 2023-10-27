@@ -1,8 +1,7 @@
-import type Base from 'deta/dist/types/base/base'
+import { H3Event } from 'h3'
 
-export function useDeta(): { base: Base } {
-  // @ts-ignore
-  return useNitroApp()._deta
+export function useDeta(event: H3Event) {
+  return event.context.deta
 }
 
 export function makeKey(...slugs: string[]) {

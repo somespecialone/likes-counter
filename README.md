@@ -6,10 +6,12 @@
 [![license](https://img.shields.io/github/license/somespecialone/likes-counter)](https://github.com/somespecialone/likes-counter/blob/master/LICENSE)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 [![Test](https://github.com/somespecialone/likes-counter/actions/workflows/test.yml/badge.svg)](https://github.com/somespecialone/likes-counter/actions/workflows/tests.yml)
+[![Deploy](https://github.com/somespecialone/likes-counter/actions/workflows/deploy.yml/badge.svg)](https://github.com/somespecialone/likes-counter/actions/workflows/deploy.yml)
 [![codecov](https://codecov.io/gh/somespecialone/likes-counter/graph/badge.svg?token=4NXSdyL5wc)](https://codecov.io/gh/somespecialone/likes-counter)
 ---
 
-[![Install on Space](https://deta.space/buttons/dark.svg)](https://deta.space/discovery/r/bu7crwzwrf43taf4)
+[//]: # (TODO where do I get the discovery link and how do I automate this?)
+[//]: # ([![Install on Space]&#40;https://deta.space/buttons/dark.svg&#41;]&#40;https://deta.space/discovery/r/bu7crwzwrf43taf4&#41;)
 
 ---
 

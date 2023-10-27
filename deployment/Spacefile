@@ -3,16 +3,11 @@ v: 0
 app_name: LikesCounter
 
 micros:
-  - name: likes-counter
-    src: .
+  - name: api
+    src: .output/server
     engine: nodejs16
-    primary: true
     public: true
-    commands:
-      - pnpm build
-    include:
-      - .output
-    run: node .output/server/index.mjs
+    run: node index.mjs
     presets:
       env:
         - name: NITRO_DETA_BASE_NAME

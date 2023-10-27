@@ -1,6 +1,6 @@
 {
   "name": "likes-counter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Dmytro Tkachenko",
     "email": "tkachenkodmitriy@yahoo.com"
@@ -14,9 +14,9 @@
     "coverage": "vitest --coverage"
   },
   "dependencies": {
-    "deta": "^1.2.0",
-    "nanoid": "^4.0.2",
-    "nitropack": "^2.6.0"
+    "deta": "^2.0.0",
+    "nanoid": "^5.0.2",
+    "nitropack": "^2.7.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
@@ -29,5 +29,6 @@
     "supertest": "^6.3.3",
     "typescript": "^5.2.2",
     "vitest": "^0.34.3"
-  }
+  },
+  "packageManager": "pnpm@8.6.6"
 }

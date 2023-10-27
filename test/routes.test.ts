@@ -7,7 +7,6 @@ import { SuperAgentTest, agent as _agent } from 'supertest'
 import { Deta } from 'deta'
 
 import { makeKey } from '../utils'
-import { TOTAL_LIKES_POSTFIX } from '../constants'
 
 const MAX_LIKES = 10
 const SLUG = `some-slug::${MAX_LIKES}`
@@ -34,7 +33,7 @@ afterAll(async () => {
   const deta = Deta()
   const base = deta.Base(process.env.NITRO_DETA_BASE_NAME)
   await base.delete(makeKey(SLUG, USER_ID))
-  await base.delete(makeKey(SLUG, TOTAL_LIKES_POSTFIX))
+  await base.delete(makeKey(SLUG, 'total'))
 })
 
 describe('Generate route', () => {

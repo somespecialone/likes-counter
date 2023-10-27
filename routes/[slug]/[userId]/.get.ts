@@ -1,12 +1,12 @@
 export default eventHandler(async (event) => {
   const { slug, userId } = event.context.params
 
-  if (userId === TOTAL_LIKES_POSTFIX || Array.isArray(userId)) {
-    throw createError({ statusCode: 400, statusMessage: USER_ID_ERR_MSG })
+  if (userId === 'total') {
+    throw createError({ statusCode: 400, statusMessage: "Invalid 'userId'" })
   }
 
-  const { base } = useDeta()
-  const totalKey = makeKey(slug, TOTAL_LIKES_POSTFIX)
+  const { base } = useDeta(event)
+  const totalKey = makeKey(slug, 'total')
   const userKey = makeKey(slug, userId)
 
   let userLikes = 0
