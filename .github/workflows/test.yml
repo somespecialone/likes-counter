@@ -3,7 +3,7 @@ name: Test
 on:
   push:
     branches: [ master ]
-    paths-ignore: [ ".*", "!.*.ts", "LICENSE", "README.md", "Spacefile" ]
+    paths-ignore: [ ".*", "!.*.ts", "LICENSE", "README.md", "deployment" ]
 
 jobs:
   main:

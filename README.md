@@ -15,7 +15,7 @@
 
 ---
 
-> ️ ️⚠️ Try demo **[here](https://lc.somespecial.one)**. Also look at [views-counter](https://github.com/somespecialone/views-counter)
+> ️ ️⚠️ Try demo **[here](https://somespecialone.github.io/likes-counter)**. Also look at [views-counter](https://github.com/somespecialone/views-counter)
 
 ## How to use
 

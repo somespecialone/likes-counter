@@ -35,7 +35,7 @@ jobs:
         run: pnpm build
 
       - name: Copy deployment files to root
-        run: cp deployment/.spaceignore deployment/Spacefile .
+        run: cp deployment/.spaceignore deployment/Spacefile deployment/Discovery.md .
 
       - name: Deploy to Deta Space
         uses: neobrains/space-deployment-github-action@v0.5
