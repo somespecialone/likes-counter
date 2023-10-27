@@ -43,8 +43,8 @@ jobs:
           access_token: ${{ secrets.DETA_ACCESS_TOKEN }}
           project_id: ${{ env.DETA_PROJECT_ID }}
           space_push: true
-          space_release: true
-          release_version: ${{ github.ref_name }}
+#          space_release: true
+#          release_version: ${{ github.ref_name }}
 
   demo:
     runs-on: ubuntu-latest
@@ -55,11 +55,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Replace base urls in demo static files
-        run: | 
-          sed -i "s|const bu=\"\"|const bu=\"$API_URL\"|g" public/script.js
-          sed -i "s|script.js|\"likes-counter/script.js\"|g" public/index.html
-          sed -i "s|style.css|\"likes-counter/style.css\"|g" public/index.html
+      - name: Replace base url in demo static file
+        run: sed -i "s|const bu=\"\"|const bu=\"$API_URL\"|g" public/script.js
 
       - name: Upload & deploy to GitHub Pages
         uses: actions/configure-pages@v3
