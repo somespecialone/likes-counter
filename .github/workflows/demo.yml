@@ -1,0 +1,32 @@
+name: Demo
+
+on:
+  release:
+    types: [ published ]
+
+env:
+  API_URL: https://lc.somespecial.one
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Replace base url in demo static file
+        run: sed -i "s|const bu=\"\"|const bu=\"$API_URL\"|g" public/script.js
+
+      - uses: actions/upload-pages-artifact@v2
+        with:
+          path: public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2

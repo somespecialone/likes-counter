@@ -7,6 +7,7 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 [![Test](https://github.com/somespecialone/likes-counter/actions/workflows/test.yml/badge.svg)](https://github.com/somespecialone/likes-counter/actions/workflows/tests.yml)
 [![Deploy](https://github.com/somespecialone/likes-counter/actions/workflows/deploy.yml/badge.svg)](https://github.com/somespecialone/likes-counter/actions/workflows/deploy.yml)
+[![Demo](https://github.com/somespecialone/likes-counter/actions/workflows/demo.yml/badge.svg)](https://github.com/somespecialone/likes-counter/actions/workflows/demo.yml)
 [![codecov](https://codecov.io/gh/somespecialone/likes-counter/graph/badge.svg?token=4NXSdyL5wc)](https://codecov.io/gh/somespecialone/likes-counter)
 ---
 

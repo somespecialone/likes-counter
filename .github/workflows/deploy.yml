@@ -4,24 +4,18 @@ on:
   release:
     types: [ published ]
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 env:
   NITRO_PRESET: node-server
+  NITRO_DETA_PROJECT_KEY: empty_key_just_for_build
   DETA_PROJECT_ID: a0t2H9PGNvsi
-  NUXT_DETA_PROJECT_KEY: empty_key_just_for_build
-  API_URL: https://lc.somespecial.one
 
 jobs:
-  api:
+  main:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     environment:
       name: deta-space
-      url: ${{ env.API_URL }}
+      url: https://lc.somespecial.one
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v2
@@ -43,26 +37,6 @@ jobs:
           access_token: ${{ secrets.DETA_ACCESS_TOKEN }}
           project_id: ${{ env.DETA_PROJECT_ID }}
           space_push: true
+#         https://github.com/deta/space-cli/issues/160
 #          space_release: true
 #          release_version: ${{ github.ref_name }}
-
-  demo:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Replace base url in demo static file
-        run: sed -i "s|const bu=\"\"|const bu=\"$API_URL\"|g" public/script.js
-
-      - name: Upload & deploy to GitHub Pages
-        uses: actions/configure-pages@v3
-      - uses: actions/upload-pages-artifact@v2
-        with:
-          path: public
-
-      - uses: actions/deploy-pages@v2
-        id: deployment
