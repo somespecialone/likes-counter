@@ -16,7 +16,7 @@
   "dependencies": {
     "deta": "^2.0.0",
     "nanoid": "^5.0.2",
-    "nitropack": "^2.7.0"
+    "nitropack": "^2.7.2"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
