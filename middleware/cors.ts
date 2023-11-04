@@ -4,13 +4,11 @@ export default eventHandler((event) => {
 
   setResponseHeaders(event, { 'Access-Control-Allow-Origin': config.allowOrigin })
 
-  if (getMethod(event) === 'OPTIONS') {
+  if (event.method === 'OPTIONS') {
     setResponseHeaders(event, {
       'Access-Control-Allow-Methods': 'GET,POST',
       'Access-Control-Allow-Headers': '*'
     })
-    event.res.statusCode = 204
-    event.res.statusMessage = 'No Content.'
-    return 'OK'
+    sendNoContent(event)
   }
 })
