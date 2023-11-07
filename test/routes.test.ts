@@ -40,7 +40,7 @@ afterAll(async () => {
 
 describe('Generate route', () => {
   test('GET', async () => {
-    const res = await agent.get('/generate').expect(200)
+    const res = await agent.get('/generate').set('origin', 'https://example.com').expect(200)
     expect(res.headers['content-type']).toMatch(/json/)
     expect(res.headers['cache-control']).toMatch(/no-store/)
     expect(res.headers['access-control-allow-origin']).toEqual(process.env.NITRO_ALLOW_ORIGIN || '*')
@@ -54,7 +54,7 @@ describe('Generate route', () => {
 
 describe('Likes routes', () => {
   test('GET', async () => {
-    const res = await agent.get(LIKES_URL).expect(200)
+    const res = await agent.get(LIKES_URL).set('origin', 'https://example.com').expect(200)
     expect(res.headers['content-type']).toMatch(/json/)
     expect(res.headers['cache-control']).toMatch(/no-store/)
     expect(res.headers['access-control-allow-origin']).toEqual(process.env.NITRO_ALLOW_ORIGIN || '*')
