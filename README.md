@@ -12,11 +12,9 @@
 
 An easy-to-integrate like counter for your website.
 
-[//]: # (TODO where do I get the discovery link and how do I automate this?)
+[![Install on Space](https://deta.space/buttons/light.svg)](https://deta.space/discovery/@somespecialone/likescounter)
 
-[//]: # ([![Install on Space]&#40;https://deta.space/buttons/dark.svg&#41;]&#40;https://deta.space/discovery/r/bu7crwzwrf43taf4&#41;)
-
-> [!TIP]
+> [!NOTE]
 > Try demo **[here](https://somespecialone.github.io/likes-counter)**. Also look
 > at [views-counter](https://github.com/somespecialone/views-counter)
 >
@@ -76,7 +74,7 @@ App can use `NITRO_DEF_MAX_LIKES_COUNT` env variable to set default number, [kno
 
 ## Deployment ⚒️
 
-### Deta Space
+### Deta Space 🚀🌌
 You can install app on `Deta Space` with button above.
 
 ### Providers
@@ -94,7 +92,7 @@ App use `Deta Base` for database, so `DETA_PROJECT_KEY` or `NITRO_DETA_PROJECT_K
 * `NITRO_DEF_ID_LENGTH` - length of generated id. Default 10
 * `NITRO_ALLOW_ORIGIN` - allow origin header. Default *
 
-## 🧪 Tests
+## Tests 🧪
 
 Clone repo and run `test` script with your package manager or
 

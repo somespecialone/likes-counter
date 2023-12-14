@@ -1,6 +1,6 @@
 ---
 app_name: "LikesCounter"
-title: "LikesCounter: Like counter for personal website."
+title: "LikeCounter: For personal website."
 tagline: "An easy-to-integrate like counter for your website."
 theme_color: "#EE80A3"
 git: "<https://github.com/somespecialone/likes-counter>"
