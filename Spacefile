@@ -1,6 +1,7 @@
 v: 0
 
 app_name: LikesCounter
+icon: icon.png
 
 micros:
   - name: api
@@ -11,6 +12,17 @@ micros:
     presets:
       env:
         - name: NITRO_DETA_BASE_NAME
+          default: likes-counter
+          description: Name of the Deta Base
+
         - name: NITRO_DEF_MAX_LIKES_COUNT
+          default: '1'
+          description: Max number of likes
+
         - name: NITRO_DEF_ID_LENGTH
+          default: '10'
+          description: Length of generated id.
+
         - name: NITRO_ALLOW_ORIGIN
+          default: "*"
+          description: Allow origin header

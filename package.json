@@ -1,9 +1,9 @@
 {
   "name": "likes-counter",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": {
     "name": "Dmytro Tkachenko",
-    "email": "tkachenkodmitriy@yahoo.com"
+    "email": "itsme@somespecial.one"
   },
   "scripts": {
     "prepare": "nitropack prepare",

@@ -9,16 +9,18 @@
 [![Deploy](https://github.com/somespecialone/likes-counter/actions/workflows/deploy.yml/badge.svg)](https://github.com/somespecialone/likes-counter/actions/workflows/deploy.yml)
 [![Demo](https://github.com/somespecialone/likes-counter/actions/workflows/demo.yml/badge.svg)](https://github.com/somespecialone/likes-counter/actions/workflows/demo.yml)
 [![codecov](https://codecov.io/gh/somespecialone/likes-counter/graph/badge.svg?token=4NXSdyL5wc)](https://codecov.io/gh/somespecialone/likes-counter)
----
+
+An easy-to-integrate like counter for your website.
 
 [//]: # (TODO where do I get the discovery link and how do I automate this?)
+
 [//]: # ([![Install on Space]&#40;https://deta.space/buttons/dark.svg&#41;]&#40;https://deta.space/discovery/r/bu7crwzwrf43taf4&#41;)
 
----
-
-> ️ ️⚠️ Try demo **[here](https://somespecialone.github.io/likes-counter)**. Also look at [views-counter](https://github.com/somespecialone/views-counter)
-
-⚡ Api address: https://lc.somespecial.one
+> [!TIP]
+> Try demo **[here](https://somespecialone.github.io/likes-counter)**. Also look
+> at [views-counter](https://github.com/somespecialone/views-counter)
+>
+> Free API available at address: https://lc.somespecial.one
 
 ## How to use
 
@@ -57,40 +59,44 @@ Have `len` query param - length of generated id. Default `len` value is 10.
 Payload (body) must be JSON and contain `count` field. For example:
 
 ```json
-{ "count": 1 }
+{
+  "count": 1
+}
 ```
 
 Response is `null`
 
 ### Maximum likes number
 
-By default, the maximum number of likes is limited to 1.
+By default, the maximum number of the likes is limited to 1.
 To set your own option you can add `::{your max likes number}` postfix to `slug`.
-For example `super-unique-slug::10` will set max number to 10.
+For example `super-unique-slug::10` will set max number to 10 for the current route.
 
-App can use `NITRO_DEF_MAX_LIKES_COUNT` to set default number, more [here](#deployment-) 
+App can use `NITRO_DEF_MAX_LIKES_COUNT` env variable to set default number, [know more](#deployment-)
 
 ## Deployment ⚒️
 
+### Deta Space
+You can install app on `Deta Space` with button above.
+
 ### Providers
 
-You can install in on `Deta Space` with button above.
-
-If it is not your option, app code can be built for next [providers](https://nitro.unjs.io/deploy),
-so just clone repo and use your provider.
+If this is not an option for you, application code can be built for these [providers](https://nitro.unjs.io/deploy), so
+just clone the repo and use your provider.
 
 ### Env variables
 
 App use `Deta Base` for database, so `DETA_PROJECT_KEY` or `NITRO_DETA_PROJECT_KEY` are required.
 
-* `DETA_PROJECT_KEY`/`NITRO_DETA_PROJECT_KEY` - deta project key. Read more [there](https://deta.space/docs/en/use/your-data/collections#data-keys)
-* `NITRO_DEF_MAX_LIKES_COUNT` - max number of likes. Default 1 
+* `DETA_PROJECT_KEY`/`NITRO_DETA_PROJECT_KEY` - deta project key, required if app installed not in `Deta Space`. Read
+  more [there](https://deta.space/docs/en/use/your-data/collections#data-keys)
+* `NITRO_DEF_MAX_LIKES_COUNT` - max number of likes. Default 1
 * `NITRO_DEF_ID_LENGTH` - length of generated id. Default 10
 * `NITRO_ALLOW_ORIGIN` - allow origin header. Default *
 
 ## 🧪 Tests
 
-Clone repo and run `test` script with your package manager or 
+Clone repo and run `test` script with your package manager or
 
 ```sh
 vitest
