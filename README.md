@@ -16,9 +16,10 @@ An easy-to-integrate like counter for your website.
 
 > [!NOTE]
 > Try demo **[here](https://somespecialone.github.io/likes-counter)**. Also look
-> at [views-counter](https://github.com/somespecialone/views-counter)
+> at the singling [views-counter](https://github.com/somespecialone/views-counter)
 >
-> Free API available at address: https://lc.somespecial.one
+> API of the app is available at address: https://lc.somespecial.one.
+> But please, if you tend to use it heavily, consider to installing the app on `Deta Space` by yourself with button above!
 
 ## How to use
 
